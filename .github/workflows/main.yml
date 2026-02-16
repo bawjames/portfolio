@@ -9,11 +9,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Install typst (if needed)
-        run: |
-          docker pull ghcr.io/typst/typst:0.14.2
+        run: docker pull ghcr.io/typst/typst:0.14.2
       - name: Compile typst
-        run: |
-          typst compile curriculum-vitae.typ
+        run: docker run ghcr.io/typst/typst:0.14.2 compile curriculum-vitae.typ
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
