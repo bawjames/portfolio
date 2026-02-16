@@ -1,0 +1,22 @@
+name: Compile on push to main
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install typst (if needed)
+        run: |
+          curl https://github.com/typst/typst/releases/download/v0.12.0/typst-x86_64-unknown-linux-musl.tar.xz
+          tar -xvf typst-x86_64-unknown-linux-musl.tar.xz
+      - name: Compile typst
+        run: |
+          ./typst compile curriculum-vitae.typ
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: curriculum-vitae
+          path: curriculum-vitae.pdf
