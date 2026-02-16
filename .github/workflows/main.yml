@@ -21,10 +21,8 @@ jobs:
           gh release delete latest --yes || true
           git push origin :refs/tags/latest || true
           git tag -d latest || true
-      - name: Create new release
-        uses: softprops/action-gh-release@v2
+      - name: Commit PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          files: curriculum-vitae.pdf
-          tag_name: latest
-          name: "Latest Release"
-          body: "Automatically created release"
+          commit_message: "Update generated PDF"
+          file_pattern: curriculum-vitae.pdf
