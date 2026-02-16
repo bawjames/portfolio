@@ -11,11 +11,10 @@ jobs:
       - name: Install typst (if needed)
         run: docker pull ghcr.io/typst/typst:0.14.2
       - name: Compile typst
-        run: docker run ghcr.io/typst/typst:0.14.2 compile curriculum-vitae.typ
-      - name: Compile Typst document
-        run: docker run --rm -v "${{ github.workspace }}:/data" -w /data ghcr.io/typst/typst:0.14.2 compile curriculum-vitae.typ
+        run: docker run --rm -v ${{ github.workspace }}:/workspace ghcr.io/typst/typst:0.14.2 compile /workspace/curriculum-vitae.typ
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: curriculum-vitae
           path: curriculum-vitae.pdf
+          
