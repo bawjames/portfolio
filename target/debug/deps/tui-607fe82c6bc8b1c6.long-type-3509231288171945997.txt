@@ -1,0 +1,1 @@
+<App<0> as From<[Box<(dyn app::Tab + 'static)>; 0]>>::from

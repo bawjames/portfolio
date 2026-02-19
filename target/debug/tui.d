@@ -1,0 +1,1 @@
+/home/james/code/portfolio/target/debug/tui: /home/james/code/portfolio/src/app.rs /home/james/code/portfolio/src/cv.rs /home/james/code/portfolio/src/main.rs /home/james/code/portfolio/src/overview.rs

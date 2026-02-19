@@ -1,0 +1,54 @@
+author: James Baw
+
+contact:
+  email: jamiebaw@gmail.com
+  phone: +44 7851 971789
+  github: github.com/bawjames
+  linkedin: none
+
+experience:
+  -
+    what: Chef / Waiter
+    where: Jolly Sailor Brewery
+    start: Feb 2026
+    end: Feb 2026
+  -
+    what: BSc (Honours) Computer Science
+    where: Sheffield Hallam University
+    start: Sep 2025
+
+
+languages:
+  - Haskell
+  - Rust
+  - Zig
+  - Python
+  - Bash
+  - JavaScript
+  - HTML
+  - CSS
+  - C#
+
+projects:
+  -
+    what: Type Inference
+    link: github.com/bawjames/overload-trees
+    desc: An attempt at true ad-hoc polymorphism in functional programming languages, with efficient type inference and possibly entirely static dispatch.
+  -
+    what: GitEhr
+    link: github.com/gitehr/gitehr
+    desc: An open-source electronic health record specification and reference implementation, written in rust.
+
+interests:
+  -
+    what: Linux
+    desc: My personal machine runs Arch Linux, and I previously have used Ubuntu, Debian and NixOS. I am familiar with Unix commands, Bash, and the general workings of a Linux-based operating system.
+  -
+    what: Functional Programming
+    desc: I enjoy the mathematical elegance of FP languages, and informally study FP and related fields including the lambda calculus, type theory and a bit of category theory.
+  -
+    what: Bouldering
+    desc: Sheffield is a hotspot for bouldering in the UK, which is one of the reasons I chose to study here. I currently climb around v7.
+  -
+    what: Cooking
+    desc: Predominantly in the styles of Spanish, Maghrebi, Turkish/Greek Levantine, and Southeast Asian cuisine. Among my favourite dishes are Paella, Spanish Omelette and Shakshuka.

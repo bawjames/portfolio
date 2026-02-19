@@ -1,0 +1,2 @@
+std::iter::Map<std::slice::Iter<'_, &std::string::String>, fn(&&std::string::String) -> _ {<&&std::string::String as Into<_>>::into}>
+Text<'_>: From<std::iter::Map<std::slice::Iter<'_, &std::string::String>, fn(&&std::string::String) -> _ {<&&std::string::String as Into<_>>::into}>>

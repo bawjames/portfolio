@@ -1,0 +1,2 @@
+std::iter::Map<std::slice::Iter<'_, &str>, fn(&&str) -> Span<'_> {<Span<'_> as From<&&str>>::from}>
+Text<'_>: From<std::iter::Map<std::slice::Iter<'_, &str>, fn(&&str) -> Span<'_> {<Span<'_> as From<&&str>>::from}>>
